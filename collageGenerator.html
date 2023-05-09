@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div class="topnav">
+    <!-- <a  href="index.html">Home</a> -->
+    <!-- <a href="screenBasedWork.html">Screen Based Work</a>
+    <a href="installation.html">Installation</a> -->
+    <a href="work.html" style="padding-right: 50px;">Work</a>
+    <a href="aboutMe.html">About</a>
+    
+    <a class="name" href="index.html" >OH</a>
+  </div>  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <head><title>Collage Generator</title></head>
+  <body>
+  <!--
+    <div class= "flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div> 
+    -->
+    
+    <div class= "flex-container">
+    <div style="align-self: flex-start; flex-basis: 950px;"> <!-- start of first flexbox -->
+    <div class = "slideshow-container">
+      <div class = "mySlides">
+        <img src="CollageGenerator_Images/collageGenerator_1.png" style="width:100%">
+      </div>
+    
+      <div class = "mySlides">
+        <img src="CollageGenerator_Images/collageGenerator_2.png" style="width:100%">
+      </div>
+  
+      <div class = "mySlides">
+        <img src="CollageGenerator_Images/collageGenerator_3.png" style="width:100%">
+      </div>
+
+
+
+    <div class = "thumbnail-row">
+      <div class="thumbnail-column">
+        <img class="demo cursor" src="CollageGenerator_Images/collageGenerator_1.png" style="width:100%" onclick="currentSlide(1)" alt="Installation Overview">
+      </div>
+      <div class="thumbnail-column">
+        <img class="demo cursor" src="CollageGenerator_Images/collageGenerator_2.png" style="width:100%" onclick="currentSlide(2)" alt="Installation Detail">
+      </div>
+      <div class="thumbnail-column">
+        <img class="demo cursor" src="CollageGenerator_Images/collageGenerator_3.png" style="width:100%" onclick="currentSlide(3)" alt="Installation Detail">
+      </div>
+    
+    </div>
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        //let captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        //captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+    </script>
+    </div> <!-- end of first flexbox -->
+    <div style="flex-basis: 400px;"> <!-- start of second flexbox -->
+      <h4>
+        Collage Generator
+      </h4>
+      <h5>
+        2020
+        <br> p5.js
+      </h5>
+    
+      <p>
+        This project combines collage, a very tactile and hands-on practice, with screen based technology.
+        Users can input a word and the program will generate a collage based on the input. This work explores
+        how the artist's hand can be conveyed through a screen based work. Each collage element was collected and 
+        hand torn. Then each piece was scanned in to become digital assets for use in the code. 
+      </p>
+    </div> <!-- end of second flexbox -->
+    <div style="flex-basis: 2000px;"> <!--start of third flexbox-->
+
+    </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div class="topnav">
+    <!-- <a  href="index.html">Home</a> -->
+    <!-- <a href="screenBasedWork.html">Screen Based Work</a>
+    <a href="installation.html">Installation</a> -->
+    <a href="work.html" style="padding-right: 50px;">Work</a>
+    <a href="aboutMe.html">About</a>
+    
+    <a class="name" href="index.html" >OH</a>
+  </div>  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <head><title>A Spot to Imagine</title></head>
+  <body>
+  <!--
+    <div class= "flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div> 
+    -->
+    <section>
+    <div class= "flex-container">
+    <div style="align-self: flex-start; flex-basis: 950px;"> <!-- start of first flexbox -->
+    <div class = "slideshow-container">
+      <div class = "mySlides">
+        <img src="SpotToImagine_Images/spot_01.jpg" style="width:100%">
+      </div>
+    
+      <div class = "mySlides">
+        <img src="SpotToImagine_Images/spot_02.jpg" style="width:100%">
+      </div>
+  
+      <div class = "mySlides">
+        <img src="SpotToImagine_Images/spot_03.JPG" style="width:100%">
+      </div>
+
+      <div class = "mySlides">
+        <img src="SpotToImagine_Images/spot_04.jpg" style="width:100%">
+      </div>
+
+      <div class = "mySlides">
+        <img src="SpotToImagine_Images/spot_05.jpg" style="width:100%">
+      </div>
+
+      <div class = "mySlides">
+        <img src="SpotToImagine_Images/spot_06.JPG" style="width:100%">
+      </div>
+
+      <div class = "mySlides">
+        <img src="SpotToImagine_Images/spot_07.jpg" style="width:100%">
+      </div>
+
+    <div class = "thumbnail-row">
+      <div class="thumbnail-column">
+        <img class="demo cursor" src="SpotToImagine_Images/spot_01.jpg" style="width:100%" onclick="currentSlide(1)" alt="Installation Overview">
+      </div>
+      <div class="thumbnail-column">
+        <img class="demo cursor" src="SpotToImagine_Images/spot_02.jpg" style="width:100%" onclick="currentSlide(2)" alt="Installation Detail">
+      </div>
+      <div class="thumbnail-column">
+        <img class="demo cursor" src="SpotToImagine_Images/spot_03.JPG" style="width:100%" onclick="currentSlide(3)" alt="Installation Detail">
+      </div>
+      <div class="thumbnail-column">
+        <img class="demo cursor" src="SpotToImagine_Images/spot_04.jpg" style="width:100%" onclick="currentSlide(4)" alt="Installation Detail">
+      </div>
+      <div class="thumbnail-column">
+        <img class="demo cursor" src="SpotToImagine_Images/spot_05.jpg" style="width:100%" onclick="currentSlide(5)" alt="Installation Detail">
+      </div>
+      <div class="thumbnail-column">
+        <img class="demo cursor" src="SpotToImagine_Images/spot_06.JPG" style="width:100%" onclick="currentSlide(6)" alt="Installation Detail">
+      </div>
+      <div class="thumbnail-column">
+        <img class="demo cursor" src="SpotToImagine_Images/spot_07.jpg" style="width:100%" onclick="currentSlide(7)" alt="Installation Detail">
+      </div>
+    </div>
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        //let captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        //captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+    </script>
+    </div> <!-- end of first flexbox -->
+    <div style="flex-basis: 30%;"> <!-- start of second flexbox -->
+      <h4>
+        A Spot To Imagine 
+      </h4>
+      <h5>
+        2021
+        <br> spray foam, clay, paint, pom-poms, gems
+        <br> 3x6'
+      </h5>
+      <p>
+        This installation is about providing a space for people to sit and let their imaginations wander while looking at the sculptures 
+        and recording their thoughts and what they see in the notebook. The material choice and bright color palette have a very childlike
+        quality to encourage viewers to engage with a sense of childlike wonder. 
+      </p>
+    </div> <!-- end of second flexbox -->
+  <!--
+  </div>
+  </section>
+  <section style="background-color: #ffecf1; padding: 1%">
+  <h3>Process</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+    in culpa qui officia deserunt mollit anim id est laborum.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+    in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </section>
+-->
+</body>
+</html>

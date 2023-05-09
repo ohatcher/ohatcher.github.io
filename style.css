@@ -1,0 +1,461 @@
+/*
+theme color codes (slightly muted rainbow)
+darker red violet: #ca55ba
+lighter red violet: #e380e6
+hot pink: #ef6587
+red: #e65d51
+orange: #ef9965
+yellow green: #d3df7f
+green: #86bc89
+blue: #86b9bc
+perriwinkle: #86a1bc
+purple: #9086bc
+*/
+
+
+html{
+  margin: 0;
+  padding: 0;
+  font-family: groteskBold;
+}
+
+head,body{
+  margin-left: 0px;
+  margin-top: 0;
+  margin-right: 0;
+  padding: 0;
+}
+ 
+
+canvas {
+  display: block;
+}
+
+@font-face {
+  font-family: mont;
+  src: url(Fonts/Mont-HeavyDEMO.otf);
+}
+@font-face {
+  font-family: groteskBold;
+  src: url(Fonts/AlteHaasGroteskBold.ttf);
+}
+
+@font-face {
+  font-family: groteskRegular;
+  src: url(Fonts/AlteHaasGroteskRegular.ttf);
+}
+
+@font-face {
+  font-family: domine;
+  src: url(Fonts/Domine-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: phosb;
+  src: url(Fonts/Phosb___.ttf);
+}
+@font-face {
+  font-family: phosph11;
+  src: url(Fonts/Phosph11.ttf);
+}
+
+@font-face {
+  font-family: 'Open-Sans';
+  src: url(Fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+  font-family: 'Work-Sans';
+  src: url(Fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+ /* padding: 100px; */
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: white;
+  overflow: hidden;
+  font-family: "Helvetica Neue";
+  font-weight: 300;
+  padding-top: 0px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #86b9bc;
+  text-align: center;
+  padding: 14px 16px; 
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #e380e6;
+  text-decoration: none;
+  
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  /*background-color: #004643; */
+  color: #9086bc;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.topnav a.name {
+  float: left;
+  /*margin-top: 10px;*/
+  margin-left: 10px;
+  margin-right: 0;
+  padding: 0%;
+  color: #86bc89;
+  font-family: "Helvetica Neue";
+  font-weight:600;
+  font-size: 40px; 
+  -webkit-animation:colorchange 20s infinite alternate;
+      
+      
+}
+
+
+@-webkit-keyframes colorchange {
+  0% {
+    
+    color: #ca55ba;
+  }
+  11% {
+    
+    color: #e380e6;
+  }
+  22% {
+    
+    color: #ef6587;
+  }
+  33% {
+    
+    color: #e65d51;
+  }
+  44% {
+    
+    color: #ef9965;
+  }
+  55% {
+    
+    color: #d3df7f;
+  }
+  66% {
+    
+    color: #86bc89;
+  }
+  77% {
+    
+    color: #86b9bc;
+  }
+  88% {
+    
+    color: #86a1bc;
+  }
+  100% {
+    
+    color: #9086bc;
+  }
+}
+
+/*
+STYLE FOR PORTFOLIO FILTERING SECTION
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /*background-color: #f1f1f1; */
+  padding-top: 1%; 
+  padding-left: 1%;
+  padding-right: 1%;
+  font-family: 'Helvetica Neue';
+}
+
+
+.main {
+  max-width: 1700px;
+  /*margin: auto; */
+} 
+
+a:link{
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  color: #ef6587;
+  text-decoration: none;
+}
+
+a:visited{
+  text-decoration: none;
+  color: #86b9bc;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+h3{
+  font-family: 'Helvetica Neue';
+  font-weight:500;
+  font-size: 40px;
+  color: #86a1bc;
+}
+
+h4{
+  font-family: 'Helvetica Neue';
+  font-size: 30px;
+  font-weight: 300;
+  color:#86bc89;
+  margin-bottom:0;
+  padding: 0;
+}
+h5{
+  font-family: 'Helvetica Neue';
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  color:#86bc89;
+}
+h6{
+  font-family: 'Helvetica Neue';
+  font-weight:600;
+  font-size: 18vw;
+  color: #86a1bc;
+  -webkit-animation:colorchange 20s infinite alternate;
+}
+p{
+  font-family: 'Helvetica Neue';
+  font-weight: 300;
+  font-size: 20px;
+  color:black;
+  word-wrap:normal;
+}
+
+p1{
+  font-family: 'Helvetica Neue';
+  font-weight: 300;
+  font-size: 25px;
+  color:#ef6587;
+  word-wrap:normal;
+}
+
+
+p2{
+  font-family: 'Helvetica Neue';
+  font-weight: 300;
+  font-size: 25px;
+  color:#d3df7f;
+  word-wrap:normal;
+}
+
+p3{
+  font-family: 'Helvetica Neue';
+  font-weight: 300;
+  font-size: 15px;
+  word-wrap:normal;
+}
+
+p4{
+  font-family: 'Helvetica Neue';
+  font-weight: 300;
+  font-size: 7vw;
+  margin: auto;
+  text-align: center;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 20px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  /*padding: 10px;*/
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  /*padding: 14px 16px;*/
+  padding-top: 10px;
+  background-color: white;
+  color:#86b9bc;
+  cursor: pointer;
+  font-family: 'analogue';
+  font-size:17px;
+}
+
+.btn:hover {
+  color: #86a1bc;
+}
+
+.btn.active {
+  /*background-color: #666; */
+  color:#9086bc;
+}
+
+/* STYLE FOR GALLERY IMAGES TEXT OVERLAY */
+.overlayContainer {
+  position: relative;
+  height:100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  height: 99.4%;
+  width: 100%;
+
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #86a1bc90; 
+}
+
+.overlayContainer:hover .overlay {
+  opacity: 1;
+}
+
+.overlayText {
+  color: white;
+  font-size: 20px;
+  font-style:italic;
+  font-family: 'Helvetica Neue';
+  font-weight:300;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+  text-align: center;
+}
+
+/* ARTWORK DETAIL PAGE SLIDESHOW STYLE*/
+.slideshow-container{
+  position:relative;
+}
+.mySlides{
+  display:none;
+}
+
+/*seven columns*/
+.thumbnail-column{
+  float:left;
+  width: 14.28%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* FLEXBOX STYLE*/
+.flex-container {
+  display: flex;
+  /*background-color: pink;*/
+  flex-wrap: wrap;
+}
+
+.flex-container > div {
+  /*background-color: #f1f1f1;*/
+  margin: 10px;
+  padding: 2%;
+  font-size: 30px;
+}
+
+.flex-container-about {
+  display: flex;
+  /*flex-direction: column;*/
+  flex-wrap: wrap;
+
+}
+
+.flex-container-gallery {
+  display: flex;
+  /*flex-direction: column;*/
+  flex-wrap: wrap;
+
+}
+
+.flex-container-gallery > *{
+  width:100%;
+  padding:1rem;
+}
+@media (min-width:768px){
+  .flex-container-gallery > *{
+    width: calc(100%/3);
+  }
+  h6{
+    font-size:8vw;
+  }
+  p4{
+    font-size: 3vw;
+  }
+}
+/*
+.flex-container-gallery > div {
+  background-color: #f1f1f1;
+  margin: 0.5%;
+  padding: 0px;
+  font-size: 30px;
+  flex-basis: 600px;
+  max-width: 32%;
+  height: auto;
+  align-items: center; 
+} */
